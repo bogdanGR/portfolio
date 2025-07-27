@@ -9,9 +9,10 @@ const typedStrings = [
 <template>
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <router-link class="nav-link active" to="/">
         <img src="/src/assets/images/logo.png" class="img" alt="avatar" width="100">
-      </a>
+      </router-link>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -27,16 +28,16 @@ const typedStrings = [
       <div class="collapse navbar-collapse main-menu" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+              <router-link class="nav-link active" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+              <router-link class="nav-link" to="/about">About</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <router-link class="nav-link" to="/projects">Projects</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
         </ul>
       </div>
