@@ -16,9 +16,6 @@
 const particlesOptions = {
   "autoPlay": true,
   "background": {
-    move: {
-      enable: false // 👈 This stops all particle movement
-    },
     "color": {
       "value": "#000000"
     },
