@@ -6,12 +6,6 @@ import {
   EnvelopeIcon,
   DocumentTextIcon
 } from '@heroicons/vue/24/outline'
-
-const typedStrings = [
-  'Software Engineer',
-  'Laravel Enthusiast',
-  'Problem Solver',
-]
 </script>
 
 <template>

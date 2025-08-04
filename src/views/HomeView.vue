@@ -1,5 +1,10 @@
 <script setup>
-
+const typedStrings = [
+  'Software Engineer',
+  'MSc in Software Engineering',
+  'Laravel Enthusiast',
+  'Problem Solver',
+]
 </script>
 
 <template>
