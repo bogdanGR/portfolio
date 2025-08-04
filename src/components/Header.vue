@@ -39,6 +39,9 @@ const typedStrings = [
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/my-cv">My CV</router-link>
+          </li>
         </ul>
       </div>
     </div>
