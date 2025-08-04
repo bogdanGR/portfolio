@@ -59,9 +59,14 @@ a {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 22px;
 }
 @keyframes blink {
   0%, 100% { opacity: 1 }
   50% { opacity: 0 }
+}
+.Typewriter {
+  font-size: 18px;
+  line-height: 1.4;
 }
