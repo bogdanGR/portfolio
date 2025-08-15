@@ -55,7 +55,7 @@ a {
   margin-left: 4px;
   font-weight: bold;
   animation: blink 1s infinite;
-  color: #149414; /* optional: match your theme */
+  color: #149414;
 }
 
 p {
@@ -70,3 +70,4 @@ p {
   font-size: 18px;
   line-height: 1.4;
 }
+
