@@ -3,7 +3,7 @@ import SocialLinks from "@/components/SocialLinks.vue";
 </script>
 
 <template>
-  <footer class="footer pt-3 pb-3">
+  <footer class="footer pt-3 pb-3 border-top border-secondary">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-6 text-left text-white">
