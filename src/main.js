@@ -13,18 +13,9 @@ import '@fontsource/roboto-mono/500.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import Particles from '@tsparticles/vue3'
-import { loadFull } from 'tsparticles'
-import TypedJs from 'vue3-typed-js'
 
 
-const app = createApp(App).use(TypedJs)
-
-app.use(Particles, {
-  init: async engine => {
-    await loadFull(engine)
-  }
-})
+const app = createApp(App)
 
 app.use(router)
 

@@ -1,52 +1,94 @@
 <script setup>
-const typedStrings = [
-  'Software Engineer',
-  'MSc in Software Engineering',
-  'Laravel Enthusiast',
-  'Problem Solver',
-]
+import {EnvelopeIcon, ArrowRightIcon } from '@heroicons/vue/24/outline/index.js'
+import SocialLinks from "@/components/SocialLinks.vue";
 </script>
 
 <template>
-  <main>
-    <div id="home-section" class="row mt-5 mb-5 pt-5 pb-5 home-header">
-      <div class=" col-md-7">
-        <h1 class="heading" style="padding-bottom: 15px;">Hi There! <span class="wave" role="img" aria-labelledby="wave">👋🏻</span></h1>
-        <h1 class="heading-name">I'M<strong class="main-name"> Bogdan Vaskan</strong></h1>
-        <div class="pt-2" style="text-align: left;">
-          <div class="Typewriter d-flex" data-testid="typewriter-wrapper">
-            <VueTyped
-              :strings="typedStrings"
-              :typeSpeed="40"
-              :backSpeed="30"
-              :loop="true"
-              @onComplete="handleComplete"
-            ></VueTyped>
-            <span class="Typewriter__cursor">|</span>
+    <section id="home-section" class="home-header min-vh-100 justify-content-center align-items-center d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="heading main-title mb-3">Hi, I am <strong class="my-name">Bogdan Vaskan</strong></h1>
+            <p class="main-text text-center mb-4">
+              Software Engineer passionate about creating beautiful, functional web applications that solve real-world problems.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+              <router-link
+                class="btn btn-primary d-flex align-items-center gap-2 text-nowrap"
+                to="/projects"
+              >
+                <span>View My Work</span>
+                <ArrowRightIcon class="icon"/>
+              </router-link>
+
+              <router-link
+                class="btn btn-secondary d-flex align-items-center gap-2"
+                to="/contact"
+              >
+                <EnvelopeIcon class="icon" />
+                <span>Get In Touch</span>
+              </router-link>
+            </div>
+            <div class="d-flex justify-content-center align-items-baseline mt-4">
+              <SocialLinks />
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-5" style="padding-bottom: 20px;">
-        <img src="/src/assets/images/header_image.svg" alt="home pic" class="img-fluid" style="max-height: 450px;">
-      </div>
-    </div>
+    </section>
 
-    <div class="row pb-5 pt-5" id="about-section">
-      <div class="col-7">
-        <h1 style="font-size: 2.6em;">LET ME <span class="purple"> INTRODUCE </span> MYSELF</h1>
-        <p>Skilled Software Engineer with hands-on experience in both
-          backend and frontend development, delivering clean, efficient,
-          and maintainable code. Combines strong technical expertise
-          with discipline and a keen eye for detail to deliver high-quality,
-          scalable solutions. Skilled in problem-solving, cross-functional
-          collaboration, and leading projects from concept to deployment
-          with a focus on performance and user-centric design.</p>
+    <section class="about-section">
+      <div class="container">
+        <h2 class="heading text-center">What I Do</h2>
+        <p class="about-text text-center">I specialize in building scalable web applications with modern technologies</p>
+       <div class="row">
+         <div class="col-4">
+           <div class="card p-3">
+             <div class="card-body">
+               <h4 class="card-title">Frontend Development</h4>
+               Creating responsive, interactive user interfaces with Vue.js and modern CSS frameworks.
+             </div>
+           </div>
+         </div>
+         <div class="col-4">
+           <div class="card p-3">
+             <div class="card-body">
+               <h4 class="card-title">Backend Development</h4>
+               Building robust APIs and server-side applications with PHP(Yii2, Laravel) and MySQL.
+             </div>
+           </div>
+         </div>
+         <div class="col-4">
+           <div class="card p-3">
+             <div class="card-body">
+               <h4 class="card-title">Full-Stack Solutions</h4>
+               Delivering complete web applications from conception to deployment.
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
-      <div class="col-5">
-        <div class="text-end">
-          <img src="/src/assets/images/avatar.svg" class="img-fluid" alt="avatar" width="200">
-        </div>
-      </div>
-    </div>
-  </main>
+    </section>
 </template>
+
+<style scoped>
+.main-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 48rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.main-title {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.card {
+  background: transparent;
+  color: var(--vt-c-white);
+  border: 1px solid lightgray;
+}
+.card:hover {
+  background: var(--primary-color);
+}
+</style>

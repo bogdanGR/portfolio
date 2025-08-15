@@ -1,15 +1,15 @@
 <template>
   <div class="app-wrapper">
-    <div class=" container">
       <Header />
-      <main class="pt-20">
+      <main class="main-wrapper">
         <router-view />
       </main>
-    </div>
+      <Footer />
   </div>
 
 </template>
 
 <script setup>
-import Header from "@/components/Header.vue"
+import Header from "@/components/Header.vue";
+import Footer from '@/components/Footer.vue';
 </script>

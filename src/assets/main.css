@@ -7,7 +7,6 @@ html, body, #app {
   margin: 0;
   padding: 0;
   height: 100%;
-  color: #149414;
 }
 
 .navbar-nav .nav-link.active {
@@ -47,15 +46,7 @@ a {
 
 .app-wrapper {
   position: relative;
-
   min-height: 100vh;
-}
-.Typewriter__cursor {
-  display: inline-block;
-  margin-left: 4px;
-  font-weight: bold;
-  animation: blink 1s infinite;
-  color: #149414;
 }
 
 p {
@@ -66,8 +57,67 @@ p {
   0%, 100% { opacity: 1 }
   50% { opacity: 0 }
 }
-.Typewriter {
-  font-size: 18px;
-  line-height: 1.4;
+
+.main-wrapper {
+  background-color: #0D0B13;
+}
+.my-name {
+  color: var(--primary-color);
+}
+.heading {
+  color: var( --vt-c-white);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn:first-child:active {
+  background: var(--secondary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.btn-primary:hover .icon,
+.btn-primary:focus .icon,
+.btn-primary:active .icon,
+.btn:first-child:active {
+  color: var(--primary-color);
+}
+.btn-secondary {
+  background: transparent;
+  border-color: var(--primary-color);
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  color: white;
 }
 
+.envelope {
+  width: 35px;
+}
+.gh-link,
+.linkedin-link,
+.email-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.gh-link:hover .gh-icon,
+.linkedin-link:hover .linkedin-icon,
+.email-link:hover .mail-icon {
+  color: var(--primary-color);
+}
+.about-text {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 3rem;
+}
+.about-section {
+  background: black;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: white;
+}

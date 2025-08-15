@@ -9,10 +9,10 @@ import {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-md navbar-light border-bottom border-secondary p-0">
+    <div class="container">
       <router-link class="nav-link active" to="/">
-        <img src="/src/assets/images/logo.png" class="img" alt="avatar" width="100">
+        <img src="/src/assets/images/logo.png" class="gh" alt="avatar" width="70">
       </router-link>
 
       <button
@@ -65,11 +65,3 @@ import {
   </nav>
 </template>
 
-
-<style scoped>
-.icon {
-  width: 20px;
-  height: 20px;
-  color: white;
-}
-</style>
