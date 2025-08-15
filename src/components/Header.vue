@@ -11,7 +11,7 @@ import {
 <template>
   <nav class="navbar navbar-expand-md navbar-light border-bottom border-secondary p-0">
     <div class="container">
-      <router-link class="nav-link active" to="/">
+      <router-link class="" to="/">
         <img src="/src/assets/images/logo.png" class="gh" alt="avatar" width="70">
       </router-link>
 
@@ -30,7 +30,7 @@ import {
       <div class="collapse navbar-collapse main-menu" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mr-3">
-            <router-link class="nav-link active d-flex align-items-center" to="/">
+            <router-link class="nav-link d-flex align-items-center" to="/">
               <HomeIcon class="icon me-2" />
               Home
             </router-link>

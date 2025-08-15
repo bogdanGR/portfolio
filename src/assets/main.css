@@ -9,8 +9,11 @@ html, body, #app {
   height: 100%;
 }
 
-.navbar-nav .nav-link.active {
-  color: #149414;
+.navbar-nav .nav-link.router-link-active,
+.navbar-nav .nav-link.router-link-exact-active,
+.navbar-nav .nav-link.router-link-active .icon,
+.navbar-nav .nav-link.router-link-exact-active .icon {
+  color: var(--primary-color);
 }
 
 a {
@@ -43,7 +46,10 @@ a {
   transform-origin: left;
   transform: scaleX(1);
 }
-
+.main-menu a:hover .icon,
+.main-menu a:hover {
+  color: var(--primary-color);
+}
 .app-wrapper {
   position: relative;
   min-height: 100vh;
