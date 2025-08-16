@@ -11,5 +11,11 @@
   padding: 1rem;
   margin: 2rem auto;
   max-width: 40rem;
+  background: transparent;
+  color: var(--vt-c-white);
+  border: 1px solid lightgray;
+}
+.card:hover {
+  background: var(--vt-c-black-soft);
 }
 </style>

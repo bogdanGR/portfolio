@@ -43,28 +43,28 @@ import SocialLinks from "@/components/SocialLinks.vue";
         <p class="about-text text-center">I specialize in building scalable web applications with modern technologies</p>
        <div class="row">
          <div class="col-4">
-           <div class="card p-3">
+           <base-card>
              <div class="card-body">
                <h4 class="card-title">Frontend Development</h4>
                Creating responsive, interactive user interfaces with Vue.js and modern CSS frameworks.
              </div>
-           </div>
+           </base-card>
          </div>
          <div class="col-4">
-           <div class="card p-3">
+           <base-card>
              <div class="card-body">
                <h4 class="card-title">Backend Development</h4>
                Building robust APIs and server-side applications with PHP(Yii2, Laravel) and MySQL.
              </div>
-           </div>
+           </base-card>
          </div>
          <div class="col-4">
-           <div class="card p-3">
+           <base-card>
              <div class="card-body">
                <h4 class="card-title">Full-Stack Solutions</h4>
                Delivering complete web applications from conception to deployment.
              </div>
-           </div>
+           </base-card>
          </div>
        </div>
       </div>
@@ -82,13 +82,5 @@ import SocialLinks from "@/components/SocialLinks.vue";
 .main-title {
   font-size: 4.5rem;
   line-height: 1;
-}
-.card {
-  background: transparent;
-  color: var(--vt-c-white);
-  border: 1px solid lightgray;
-}
-.card:hover {
-  background: var(--primary-color);
 }
 </style>
