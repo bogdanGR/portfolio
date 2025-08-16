@@ -16,7 +16,7 @@ export default {
 </script>
 <style scoped>
 .badge {
-  background-color: #252525;
+  background-color: rgba(37, 37, 37, 0.53);
   color: #ffffff;
   border-radius: 30px;
   padding: 0.5rem 1.5rem;
