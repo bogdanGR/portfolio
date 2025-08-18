@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap gap-2">
-    <h3 class="text-white mb-3">Backend</h3>
+    <h4 class="text-white mb-3">Backend</h4>
     <base-badge
       v-for="skill in backendSkills"
       :key="skill"
@@ -9,7 +9,7 @@
     />
   </div>
   <div class="flex flex-wrap gap-2 mt-3">
-    <h3 class="text-white mb-3">Frontend</h3>
+    <h4 class="text-white mb-3">Frontend</h4>
     <base-badge
       v-for="skill in frontendSkills"
       :key="skill"
@@ -18,7 +18,7 @@
     />
   </div>
   <div class="flex flex-wrap gap-2 mt-3">
-    <h3 class="text-white mb-3">Other</h3>
+    <h4 class="text-white mb-3">Other</h4>
     <base-badge
       v-for="skill in otherSkills"
       :key="skill"
