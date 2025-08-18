@@ -42,7 +42,7 @@ const certifications = [
       </div>
 
       <base-card class="mb-4">
-        <h5 class="mb-3">Contact Information</h5>
+        <h3 class="mb-3">Contact Information</h3>
         <div class="row g-3">
           <div class="col-md-6 d-flex align-items-center">
             <Mail size="16" class="text-primary me-2" />
@@ -73,7 +73,7 @@ const certifications = [
 
       <!-- Professional Summary -->
       <base-card class="mb-4">
-        <h5 class="mb-3">Professional Summary</h5>
+        <h3 class="mb-3">Professional Summary</h3>
         <p class="text-white">
           Skilled Software Engineer with hands-on experience in both
           backend and frontend development, delivering clean, efficient,
@@ -87,19 +87,19 @@ const certifications = [
 
       <!-- Skills -->
       <base-card class="mb-4">
-        <h5 class="mb-3">Technical Skills</h5>
+        <h3 class="mb-3">Technical Skills</h3>
         <tech-skills></tech-skills>
       </base-card>
 
       <!-- Work Experience -->
       <base-card class="mb-4">
-        <h5 class="mb-3">Work Experience</h5>
+        <h3 class="mb-3">Work Experience</h3>
         <work-experience></work-experience>
       </base-card>
 
       <!-- Education -->
       <base-card class="mb-4">
-        <h5 class="mb-3">Education</h5>
+        <h3 class="mb-3">Education</h3>
         <div v-for="(edu, i) in education" :key="i" class="mb-3">
           <div class="d-flex justify-content-between align-items-start">
             <div>
@@ -113,7 +113,7 @@ const certifications = [
 
       <!-- Certifications -->
       <base-card class="mb-4">
-        <h5 class="mb-3">Certifications</h5>
+        <h3 class="mb-3">Certifications</h3>
         <ul class="list-unstyled mb-0">
           <li v-for="(cert, i) in certifications" :key="i" class="d-flex align-items-center mb-2">
             <div class="bg-primary rounded-circle me-2" style="width:8px;height:8px"></div>
