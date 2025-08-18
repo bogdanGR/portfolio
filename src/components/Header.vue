@@ -64,4 +64,11 @@ import {
     </div>
   </nav>
 </template>
-
+<style scoped>
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #181818;
+  z-index: 100;
+}
+</style>
