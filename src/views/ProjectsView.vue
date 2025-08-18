@@ -12,11 +12,11 @@
           <Project :project="project" />
         </div>
       </div>
-      <div class="text-center mt-5">
+      <div class="text-center pt-5 mt-5">
         <p class="text-white mb-3">
           Interested in working together or want to see more of my work?
         </p>
-        <base-button as="a" size="lg" class="btn btn-primary" href="/contact">
+        <base-button :link="true" to="/contact">
           Get In Touch
         </base-button>
       </div>
