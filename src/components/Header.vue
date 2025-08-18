@@ -1,4 +1,4 @@
-<script setup xmlns="http://www.w3.org/1999/html">
+<script setup>
 import {
   HomeIcon,
   UserIcon,
@@ -9,7 +9,7 @@ import {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-md navbar-light border-bottom border-secondary p-0">
+  <nav class="navbar navbar-expand-md navbar-dark border-bottom border-secondary p-0">
     <div class="container">
       <router-link class="" to="/">
         <img src="/src/assets/images/logo.png" class="gh" alt="avatar" width="70">
