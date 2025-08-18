@@ -2,9 +2,24 @@
   <button v-if="!link" :class="mode">
     <slot></slot>
   </button>
-  <router-link v-else :to="to" :class="mode">
+
+  <router-link
+    v-else-if="isInternalLink"
+    :to="to"
+    :class="mode"
+  >
     <slot></slot>
   </router-link>
+
+  <a
+    v-else
+    :href="to"
+    target="_blank"
+    rel="noopener noreferrer"
+    :class="mode"
+  >
+    <slot></slot>
+  </a>
 </template>
 
 <script>
@@ -12,22 +27,26 @@ export default {
   props: {
     mode: {
       type: String,
-      required: false,
       default: null
     },
     link: {
       type: Boolean,
-      required: false,
       default: false
     },
     to: {
       type: String,
-      required: false,
-      default: '/',
+      default: '/'
+    }
+  },
+  computed: {
+    isInternalLink() {
+      // external links usually start with http://, https:// or mailto:, etc.
+      return this.to && !/^https?:\/\//.test(this.to) && !/^mailto:/.test(this.to);
     }
   }
 }
 </script>
+
 <style scoped>
 button,
 a {
