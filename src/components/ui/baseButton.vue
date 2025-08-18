@@ -46,8 +46,11 @@ a {
 a:hover,
 a:active,
 button:hover,
-button:active {
+button:active,
+a:focus,
+button:hover {
   background-color: #ffffff;
+  color: var(--primary-color);;
 }
 
 .flat {
