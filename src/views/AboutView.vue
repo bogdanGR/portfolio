@@ -13,50 +13,12 @@
         </div>
         <div class="col-6">
           <h2 class="heading">Skills & Technologies</h2>
-          <div class="flex flex-wrap gap-2">
-            <h3 class="text-white mb-3">Backend</h3>
-            <base-badge
-              v-for="skill in backendSkills"
-              :key="skill"
-              :title="skill"
-              class="mb-2"
-            />
-          </div>
-          <div class="flex flex-wrap gap-2 mt-3">
-            <h3 class="text-white mb-3">Frontend</h3>
-            <base-badge
-              v-for="skill in frontendSkills"
-              :key="skill"
-              :title="skill"
-              class="mb-2"
-            />
-          </div>
-          <div class="flex flex-wrap gap-2 mt-3">
-            <h3 class="text-white mb-3">Other</h3>
-            <base-badge
-              v-for="skill in otherSkills"
-              :key="skill"
-              :title="skill"
-              class="mb-2"
-            />
-          </div>
+          <tech-skills></tech-skills>
         </div>
       </div>
       <div class="row">
         <h2 class="heading text-center">Work Experience</h2>
-        <div class="col-12">
-          <base-card
-            v-for="(job, index) in experience"
-            :key="index"
-          >
-            <div class="d-flex justify-content-between align-items-baseline">
-              <h3 class="text-lg font-bold">{{ job.position }}</h3>
-              <base-badge class="flat" :title="job.period"></base-badge>
-            </div>
-            <p class="text-sm text-gray-400">{{ job.company }}</p>
-            <p class="mt-2">{{ job.description }}</p>
-          </base-card>
-        </div>
+        <work-experience></work-experience>
       </div>
     </div>
   </div>
@@ -65,52 +27,7 @@
 <style>
 
 </style>
-<script setup lang="ts">
-import BaseBadge from '@/components/ui/baseBadge.vue';
-
-const backendSkills = [
-  'PHP', 'Yii2', 'MySql', 'REST API', 'laravel', 'ElasticSearch'
-];
-
-const frontendSkills = [
-  'JavaScript', 'Vue.js', 'bootstrap', 'jQuery', 'HTML5', 'CSS', 'Chart.js', 'AJAX', 'Smarty',
-];
-
-const otherSkills = [
-  'git','Linux', 'API integrations'
-];
-
-const experience = [
-  {
-    company: 'Greek Army',
-    position: 'Soldier',
-    period: '1/2024 - 08/2025',
-    description: 'Completed my military service in Greek Army'
-  },
-  {
-    company: 'The Right Click',
-    position: 'Software Engineer',
-    period: '03/2023 - 11/2024',
-    description: 'Working for a client from Germany, on enterprise CRM based on Yii2, Vue.js, ElasticSearch and chart.js for data visualization.'
-  },
-  {
-    company: 'ThreeQue',
-    position: 'Software Engineer',
-    period: '08/2020 - 03/2023',
-    description: 'Customization of Vtiger CRM, Use Google APIs to sync data from/to Vtiger CRM, Experience with bridges:Winera - VtigerCRM. Developed bridge between Vtiger CRM - MyData based on Soft1 Provider.'
-  },
-  {
-    company: 'Software Engineer',
-    position: 'Software Engineer',
-    period: '09/2019 - 08/2020',
-    description: 'Developed and customized responsive PrestaShop themes and modules, delivering tailored e-commerce solutions with optimized performance and user experience.'
-  },
-  {
-    company: 'Interad',
-    position: 'Frontend Software Engineer',
-    period: '08/2018 - 12/2018',
-    description: 'Designed and developed responsive web solutions using WordPress and PrestaShop CMS.'
-  }
-];
-
+<script setup>
+import TechSkills from '@/components/TechSkills.vue';
+import WorkExperience from '@/components/WorkExperience.vue';
 </script>
