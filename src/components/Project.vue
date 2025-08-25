@@ -1,7 +1,7 @@
 <template>
   <base-card class="h-100 shadow-sm">
     <router-link :to="`/projects/${project.id}`" class="text-decoration-none">
-      <div class="ratio ratio-16x9 overflow-hidden">
+      <div class="overflow-hidden">
         <img
           :src="project.image"
           :alt="project.title"
