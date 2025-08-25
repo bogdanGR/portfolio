@@ -51,7 +51,7 @@ export default {
 button,
 a {
   text-decoration: none;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 3rem;
   font: inherit;
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
