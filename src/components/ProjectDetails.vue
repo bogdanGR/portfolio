@@ -31,7 +31,7 @@
           <base-card>
             <div class="p-3">
               <h3 class="h5 text-white mb-3">Overview</h3>
-              <p class="text-white-50 mb-0">{{ project.description }}</p>
+              <p class="text-white mb-0">{{ project.long_description }}</p>
             </div>
           </base-card>
         </div>

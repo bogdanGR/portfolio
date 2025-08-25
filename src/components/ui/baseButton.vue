@@ -51,13 +51,13 @@ export default {
 button,
 a {
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2rem;
   font: inherit;
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   color: white;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-right: 0.5rem;
   display: inline-block;
 }
