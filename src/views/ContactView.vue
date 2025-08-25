@@ -111,7 +111,7 @@
 
 <script setup>
 import { reactive, ref } from 'vue';
-
+import emailjs from 'emailjs-com';
 const formData = reactive({
   name: '',
   email: '',
@@ -133,22 +133,30 @@ const handleSubmit = async () => {
     return;
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(formData.email)) {
-    alertMessage.value = 'Please enter a valid email address.';
+  try {
+    const result = await emailjs.send(
+      'service_crht4x5',
+      'template_43jdm9i',
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      'trF77iGN4vmBPjA0R'
+    );
+
+    alertMessage.value = 'Message Sent! Thank you for your message.';
+    alertClass.value = 'alert-success';
+
+    formData.name = '';
+    formData.email = '';
+    formData.message = '';
+  } catch (error) {
+    console.error(error);
+    alertMessage.value = 'Failed to send message. Please try again later.';
     alertClass.value = 'alert-danger';
+  } finally {
     isSubmitting.value = false;
-    return;
   }
-
-  await new Promise(resolve => setTimeout(resolve, 1000));
-
-  alertMessage.value = 'Message Sent! Thank you for your message.';
-  alertClass.value = 'alert-success';
-
-  formData.name = '';
-  formData.email = '';
-  formData.message = '';
-  isSubmitting.value = false;
 };
 </script>
