@@ -1,12 +1,13 @@
 <template>
   <base-card class="h-100 shadow-sm">
     <!-- Project image -->
-    <div v-if="project.image" class="overflow-hidden" style="height: 200px;">
+    <div v-if="project.image" class="overflow-hidden" style="height: 250px;">
       <img
         :src="project.image"
         :alt="project.title"
         class="img-fluid w-100 h-100"
-        style="object-fit: cover;"
+        style="object-fit: cover;
+        object-position: top;"
       />
     </div>
 
@@ -27,21 +28,17 @@
       <div class="mt-auto d-flex gap-2">
         <base-button
           v-if="project.link"
-          as="a"
-          :href="project.link"
+          link="true"
+          :to="project.link"
           target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary btn-sm"
         >
           Live Demo
         </base-button>
         <base-button
           v-if="project.github"
-          as="a"
-          :href="project.github"
+          link="true"
+          :to="project.github"
           target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-outline-secondary btn-sm"
         >
           Code
         </base-button>
