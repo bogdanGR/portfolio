@@ -45,27 +45,27 @@ const certifications = [
         <h3 class="mb-3">Contact Information</h3>
         <div class="row g-3">
           <div class="col-md-6 d-flex align-items-center">
-            <Mail size="16" class="text-primary me-2" />
+            <Mail size="16" class="icon-color me-2" />
             <a href="mailto:bogdanvaskan450@gmail.com" class="text-white">bogdanvaskan450@gmail.com</a>
           </div>
           <div class="col-md-6 d-flex align-items-center">
-            <Phone size="16" class="text-primary me-2" />
+            <Phone size="16" class="icon-color me-2" />
             <a href="tel:+306948174809" class="text-white">+30 6948174809</a>
           </div>
           <div class="col-md-6 d-flex align-items-center">
-            <MapPin size="16" class="text-primary me-2" />
+            <MapPin size="16" class="icon-color me-2" />
             <span class="text-white">Athens, Greece</span>
           </div>
           <div class="col-md-6 d-flex align-items-center">
-            <Globe size="16" class="text-primary me-2" />
+            <Globe size="16" class="icon-color me-2" />
             <span class="text-white">www.bogdan-vaskan.com</span>
           </div>
           <div class="col-md-6 d-flex align-items-center">
-            <Github size="16" class="text-primary me-2" />
+            <Github size="16" class="icon-color me-2" />
             <a href="https://github.com/bogdanGR" target="_blank" class="text-white">github.com/bogdanGR</a>
           </div>
           <div class="col-md-6 d-flex align-items-center">
-            <Linkedin size="16" class="text-primary me-2" />
+            <Linkedin size="16" class="icon-color me-2" />
             <a href="https://www.linkedin.com/in/bogdan-vaskan-a2764512b/" class="text-white">linkedin.com/in/bogdan-vaskan-a2764512b</a>
           </div>
         </div>

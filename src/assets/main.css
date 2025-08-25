@@ -127,3 +127,7 @@ p {
   padding-bottom: 3rem;
   color: white;
 }
+
+.icon-color {
+  color: var(--primary-color);
+}
