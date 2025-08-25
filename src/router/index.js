@@ -5,6 +5,7 @@ import ContactView from '@/views/ContactView.vue';
 import AboutView from '@/views/AboutView.vue';
 import MyCvVIEW from '@/views/MyCvVIEW.vue';
 import NotFound from '@/views/NotFound.vue';
+import ProjectDetails from '@/components/ProjectDetails.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,6 +25,7 @@ const router = createRouter({
       name: 'projects',
       component: () => ProjectsView,
     },
+    { path: '/projects/:id(\\d+)', name: 'project-details', component: ProjectDetails, props: true },
     {
       path: '/contact',
       name: 'contact',
