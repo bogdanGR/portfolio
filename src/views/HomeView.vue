@@ -16,7 +16,7 @@ import SocialLinks from "@/components/SocialLinks.vue";
             Software Engineer passionate about creating beautiful, functional web applications that solve real-world problems.
           </p>
 
-          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 home-btn-wrapper">
             <router-link
               class="btn btn-primary d-flex align-items-center gap-2 text-nowrap w-auto"
               to="/projects"
@@ -33,8 +33,6 @@ import SocialLinks from "@/components/SocialLinks.vue";
               <span>Get In Touch</span>
             </router-link>
           </div>
-
-
 
           <div class="d-flex justify-content-center align-items-baseline mt-4">
             <SocialLinks />
@@ -85,6 +83,9 @@ import SocialLinks from "@/components/SocialLinks.vue";
 </template>
 
 <style scoped>
+.home-btn-wrapper a {
+  min-width: 150px;
+}
 /* Responsive typography that scales nicely on phones */
 .main-title {
   /* min 2rem, scale with viewport, cap at 4.5rem */
