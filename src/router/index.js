@@ -8,7 +8,7 @@ import NotFound from '@/views/NotFound.vue';
 import ProjectDetails from '@/components/ProjectDetails.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
@@ -18,23 +18,23 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => AboutView,
+      component: AboutView,
     },
     {
       path: '/projects',
       name: 'projects',
-      component: () => ProjectsView,
+      component: ProjectsView,
     },
     { path: '/projects/:id(\\d+)', name: 'project-details', component: ProjectDetails, props: true },
     {
       path: '/contact',
       name: 'contact',
-      component: () => ContactView,
+      component: ContactView,
     },
     {
       path: '/my-cv',
       name: 'my-cv',
-      component: () => MyCvVIEW,
+      component: MyCvVIEW,
     },
     {
       path: '/:notFound(.*)',
