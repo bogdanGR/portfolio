@@ -52,9 +52,9 @@ import SocialLinks from "@/components/SocialLinks.vue";
       </p>
 
       <!-- Stack on mobile, 3-up from md and up -->
-      <div class="row g-4">
+      <div class="row g-2 g-md-4">
         <div class="col-12 col-md-4">
-          <base-card class="h-100">
+          <base-card>
             <div class="card-body">
               <h4 class="card-title">Frontend Development</h4>
               Creating responsive, interactive user interfaces with Vue.js and modern CSS frameworks.
@@ -63,7 +63,7 @@ import SocialLinks from "@/components/SocialLinks.vue";
         </div>
 
         <div class="col-12 col-md-4">
-          <base-card class="h-100">
+          <base-card >
             <div class="card-body">
               <h4 class="card-title">Backend Development</h4>
               Building robust APIs and server-side applications with PHP (Yii2, Laravel) and MySQL.
@@ -72,7 +72,7 @@ import SocialLinks from "@/components/SocialLinks.vue";
         </div>
 
         <div class="col-12 col-md-4">
-          <base-card class="h-100">
+          <base-card>
             <div class="card-body">
               <h4 class="card-title">Full-Stack Solutions</h4>
               Delivering complete web applications from conception to deployment.
@@ -110,7 +110,15 @@ import SocialLinks from "@/components/SocialLinks.vue";
 /* Slightly reduce hero height on very small screens to avoid overflow */
 @media (max-width: 575.98px) {
   .home-header {
-    min-height: 80vh;
+    min-height: 80vh!important;
+  }
+  .about-section .card-body {
+    padding: 0.75rem;
+  }
+  .about-section .card {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
   }
 }
+
 </style>
