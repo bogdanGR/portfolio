@@ -4,7 +4,9 @@ import {
   UserIcon,
   CodeBracketIcon,
   EnvelopeIcon,
-  DocumentTextIcon
+  DocumentTextIcon,
+  XMarkIcon,
+  Bars3Icon
 } from '@heroicons/vue/24/outline'
 </script>
 
@@ -16,15 +18,16 @@ import {
       </router-link>
 
       <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        class="navbar-toggler collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <Bars3Icon class="toggler-icon bars text-white" />
+        <XMarkIcon class="toggler-icon close text-white" />
       </button>
 
       <div class="collapse navbar-collapse main-menu" id="navbarNav">
@@ -71,4 +74,37 @@ import {
   background: #181818;
   z-index: 100;
 }
+/* icon sizing */
+.toggler-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* default: show burger, hide X */
+.navbar-toggler .close {
+  display: none;
+}
+.navbar-toggler .bars  {
+  display: inline-block;
+}
+
+/* when menu is open, Bootstrap removes .collapsed */
+.navbar-toggler:not(.collapsed) .close {
+  display: inline-block;
+}
+.navbar-toggler:not(.collapsed) .bars  {
+  display: none;
+}
+
+.navbar-toggler {
+  border: none!important;
+  outline: none!important;
+}
+
+.navbar-toggler:focus {
+  border: none!important;
+  outline: none!important;
+  box-shadow: none;
+}
+
 </style>
