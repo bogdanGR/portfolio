@@ -99,9 +99,23 @@
             Whether you're a company looking to hire, or you have a project idea,
             let's discuss how we can work together.
           </p>
-          <div class="d-flex gap-2">
-            <base-button to="/my-cv" link="true" mode="outline">View My CV</base-button>
-            <base-button to="https://www.linkedin.com/in/bogdan-vaskan-a2764512b/" link="true">LinkedIn Profile</base-button>
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+            <base-button
+              link
+              to="/my-cv"
+              mode="outline"
+              class="btn-responsive"
+            >
+              View My CV
+            </base-button>
+
+            <base-button
+              link
+              to="https://www.linkedin.com/in/bogdan-vaskan-a2764512b/"
+              class="btn-responsive"
+            >
+              LinkedIn Profile
+            </base-button>
           </div>
         </base-card>
       </div>
@@ -109,6 +123,21 @@
   </div>
 </template>
 
+<style scoped>
+.btn-responsive {
+  width: auto;            /* default on desktop */
+  min-width: 150px;       /* keeps them looking balanced */
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .btn-responsive {
+    width: 100%;          /* both buttons same width when stacked */
+    max-width: 250px;     /* prevent stretching too wide */
+    margin: 0 auto;       /* keep centered */
+  }
+}
+</style>
 <script setup>
 import { reactive, ref } from 'vue';
 import emailjs from 'emailjs-com';
