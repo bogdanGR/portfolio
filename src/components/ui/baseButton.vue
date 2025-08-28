@@ -90,4 +90,12 @@ button:hover {
 .outline:active {
   background-color: #bcfa94;
 }
+
+@media (max-width: 575.98px) {
+  button,
+  a {
+    padding: 0.75rem 2rem;
+    border-radius: 35px;
+  }
+}
 </style>
