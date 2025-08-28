@@ -9,26 +9,6 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    description: "A personal portfolio built with Vue 3 and Bootsrap CSS.",
-    long_description: "A lightweight personal site built with Vue 3, Vite and Bootstrap CSS. It features a responsive projects grid, project detail pages, a contact flow, lazy-loaded images and reusable Base components for consistent UI.",
-    image: new URL('@/assets/images/portfolio.png', import.meta.url).href,
-    link: "",
-    github: "https://github.com/bogdanGR/portfolio",
-    technologies: ["Vue 3", "Bootstrap CSS", "Vite"]
-  },
-  {
-    id: 3,
-    title: "Job Board",
-    description: "A Laravel job board with many filters and searching by salary, category and experience",
-    long_description: "A Laravel job board focused on fast discovery: filter by salary, category and experience with server-side pagination and clean query scopes. Built with Tailwind CSS and Vite, backed by MySQl for persistence.",
-    image: new URL('@/assets/images/job_board.png', import.meta.url).href,
-    link: "",
-    github: "https://github.com/bogdanGR/job-board",
-    technologies: ["Laravel", "Tailwind CSS", "Vite", "MySQl"]
-  },
-  {
-    id: 4,
     title: "Movie World",
     description: "Case study for PHP Software Engineer at TravelStation",
     long_description: "A PHP/Symfony case study exploring a small movie catalog. Implements browsing, search, sorting and pagination with Bootstrap CSS styling, emphasizing a clear separation between controllers, services and reusable templates.",
@@ -38,7 +18,37 @@ export const projects = [
     technologies: ["Php", "Symfony", "Bootstrap CSS", "MySQl"]
   },
   {
+    id: 3,
+    title: "Vacation Portal",
+    description: "Assignment for PHP Software Engineer at Epignosis",
+    long_description: "A lightweight, PHP 8.2 app where employees request vacations and managers approve/reject them.<br> Stack: PHP 8.2, Apache, MySQL 8, Docker, PHPUnit, Bootstrap.",
+    image: new URL('@/assets/images/vacation_portal.png', import.meta.url).href,
+    link: "",
+    github: "https://github.com/bogdanGR/vacation_portal",
+    technologies: ["Php", "Apache", "MySQl", "Docker", "PHPUnit", "Bootstrap CSS"]
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    description: "A personal portfolio built with Vue 3 and Bootsrap CSS.",
+    long_description: "A lightweight personal site built with Vue 3, Vite and Bootstrap CSS. It features a responsive projects grid, project detail pages, a contact flow, lazy-loaded images and reusable Base components for consistent UI.",
+    image: new URL('@/assets/images/portfolio.png', import.meta.url).href,
+    link: "",
+    github: "https://github.com/bogdanGR/portfolio",
+    technologies: ["Vue 3", "Bootstrap CSS", "Vite"]
+  },
+  {
     id: 5,
+    title: "Job Board",
+    description: "A Laravel job board with many filters and searching by salary, category and experience",
+    long_description: "A Laravel job board focused on fast discovery: filter by salary, category and experience with server-side pagination and clean query scopes. Built with Tailwind CSS and Vite, backed by MySQl for persistence.",
+    image: new URL('@/assets/images/job_board.png', import.meta.url).href,
+    link: "",
+    github: "https://github.com/bogdanGR/job-board",
+    technologies: ["Laravel", "Tailwind CSS", "Vite", "MySQl"]
+  },
+  {
+    id: 6,
     title: "Digital Library - frontend",
     description: "Digital library frontend, part of my diploma thesis",
     long_description: "Vue.js frontend for a digital library (diploma thesis). Provides catalog browsing and search, language switching via i18n, and responsive layouts with Bootstrap CSS and accessible UI components.",
@@ -48,7 +58,7 @@ export const projects = [
     technologies: ["Vue.js", "Bootstrap CSS", "i18n"]
   },
   {
-    id: 6,
+    id: 7,
     title: "Digital Library - Backend",
     description: "Digital library backend (REST API and Admin Panel), part of my diploma thesis",
     long_description: "Laravel backend for the digital library: a REST API and an admin panel built with Filament. Delivers CRUD endpoints and management screens for catalog entities with validation and MySQL persistence.",
@@ -58,7 +68,7 @@ export const projects = [
     technologies: ["Php","Laravel", "Filament", "MySQL"]
   },
   {
-    id: 7,
+    id: 8,
     title: "Event Management",
     description: "A laravel REST API to serve events.",
     long_description: "A small Laravel REST API that serves event data. Supports CRUD operations, pagination and query parameters for date/category filters, returning clean JSON suitable for front-end consumption.",
@@ -68,7 +78,7 @@ export const projects = [
     technologies: ["Php","Laravel", "REST API"]
   },
   {
-    id: 8,
+    id: 9,
     title: "Book Review",
     description: "Laravel book review with filters and searching",
     long_description: "A Laravel application for exploring and reviewing books. Includes search and filtering, relational models (books, authors, reviews) and MySQL persistence, with straightforward list and detail views.",
