@@ -16,17 +16,25 @@ import SocialLinks from "@/components/SocialLinks.vue";
             Software Engineer passionate about creating beautiful, functional web applications that solve real-world problems.
           </p>
 
-          <div class="d-flex justify-content-center gap-3 flex-column flex-sm-row">
-            <router-link class="btn btn-primary d-flex align-items-center gap-2 text-nowrap" to="/projects">
+          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+            <router-link
+              class="btn btn-primary d-flex align-items-center gap-2 text-nowrap w-auto"
+              to="/projects"
+            >
               <span>View My Work</span>
               <ArrowRightIcon class="icon" />
             </router-link>
 
-            <router-link class="btn btn-secondary d-flex align-items-center gap-2" to="/contact">
+            <router-link
+              class="btn btn-secondary d-flex align-items-center gap-2 text-nowrap w-auto"
+              to="/contact"
+            >
               <EnvelopeIcon class="icon" />
               <span>Get In Touch</span>
             </router-link>
           </div>
+
+
 
           <div class="d-flex justify-content-center align-items-baseline mt-4">
             <SocialLinks />
