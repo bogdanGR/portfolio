@@ -40,6 +40,22 @@ const router = createRouter({
       path: '/:notFound(.*)',
       component: NotFound},
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // Back/forward restores previous position
+    if (savedPosition) return savedPosition
+
+    // If the route has a hash (#section), scroll to it
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 0,
+        behavior: 'auto',
+      }
+    }
+
+    // Default: start at the top of the page
+    return { left: 0, top: 0, behavior: 'auto' } // or 'smooth'
+  },
 })
 
 export default router
