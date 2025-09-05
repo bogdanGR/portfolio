@@ -54,7 +54,7 @@ const router = createRouter({
     }
 
     // Default: start at the top of the page
-    return { left: 0, top: 0, behavior: 'auto' } // or 'smooth'
+    return { left: 0, top: 0, behavior: 'smooth' }
   },
 })
 

@@ -35,7 +35,7 @@ const certifications = [
         <h1 class="fw-bold display-4 mb-3 heading">Bogdan Vaskan</h1>
         <p class="fs-4 text-white mb-4">Full-Stack Software Engineer</p>
 
-        <a href="/src/assets/files/BOGKNTAN_VASKAN_CV.pdf" download="BOGKNTAN_VASKAN_CV.pdf">
+        <a href="/BOGKNTAN_VASKAN_CV_.pdf" download="BOGKNTAN_VASKAN_CV.pdf">
             <Download class="me-2" size="18" />
             Download CV
         </a>
