@@ -64,7 +64,7 @@ export const projects = [
     long_description: "Laravel backend for the digital library: a REST API and an admin panel built with Filament. Delivers CRUD endpoints and management screens for catalog entities with validation and MySQL persistence.",
     image: new URL('@/assets/images/digital-lib-bo.png', import.meta.url).href,
     link: "",
-    github: "",
+    github: "https://github.com/bogdanGR/digital-lib-backend",
     technologies: ["Php","Laravel", "Filament", "MySQL"]
   },
   {
@@ -74,7 +74,7 @@ export const projects = [
     long_description: "A small Laravel REST API that serves event data. Supports CRUD operations, pagination and query parameters for date/category filters, returning clean JSON suitable for front-end consumption.",
     image: new URL('@/assets/images/event-manager.png', import.meta.url).href,
     link: "",
-    github: "",
+    github: "https://github.com/bogdanGR/event-management",
     technologies: ["Php","Laravel", "REST API"]
   },
   {
